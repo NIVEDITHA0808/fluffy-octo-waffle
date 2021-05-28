@@ -15,9 +15,12 @@ def digits(m,n,x,count):
 count = 0        
 a = input("No. of digits: ")
 x = input("divisibility rule of ")
+
 print("No. of "+a+" digit numbers divisible by "+x)
+
 m = input("from ")
 n = input("to ")
+
 print("is:")
 print(digits(m,n,x,count))
  
