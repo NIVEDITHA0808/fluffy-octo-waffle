@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block body %}
+   <h1>Registration</h1>
+   <form action='/register' method='post'>
+      <input name='name' placeholder='Name' type='text'>
+      <input name='email' id ='email' placeholder='Email' type='text'>
+      <select name='dorm'>
+          <option disabled selected value="Dorm">Dorm</option>
+          <option value="Block A">Block A</option>
+          <option value="Block B">Block B</option>
+          <option value="Block C">Block C</option>
+          <option value="Ladies Hostel">Ladies Hostel</option>
+          <input type='submit' value='Register'>
+      </select>     
+   </form>
+   <a href = "http://127.0.0.1:5000/registered" style ="color:white">list of registrants</a>
+   <style>
+      body{
+      background-color:#212121;
+      color: white
+      }
+    </style>
+{% endblock %}   
+
